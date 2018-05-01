@@ -1,0 +1,38 @@
+{
+  "name": "tavera.alacricty.test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js --exec babel-node",
+    "build": "babel lib -d dist",
+    "serve": "node dist/index.js",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "crypto-js": "^3.1.9-1",
+    "dblite": "^0.8.0",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.3",
+    "sqlite": "^2.9.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.0.1",
+    "chai-http": "^3.0.0",
+    "eslint": "^4.19.1",
+    "faker": "^3.1.0",
+    "mocha": "^4.0.1"
+  }
+}
